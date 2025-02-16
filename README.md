@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=SMt3T-K2b_4&list=PLupK5DK91flV45dkPXyGViMLtHadRr
 
 # MLOps Pipeline
 
-1. data_ingestion.py 
+A. data_ingestion.py 
 
    1. Load parameters from params.yaml file.
    2. load_data(data_url='https://raw.github.com/data/spam.csv')    -- load data from URL
@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=SMt3T-K2b_4&list=PLupK5DK91flV45dkPXyGViMLtHadRr
     2025-02-16 21:23:43,318 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
     
 
-2. preprocessing.py
+B. preprocessing.py
 
   1. transform_text()                                               -- Transforms the input text by converting it to lowercase, tokenizing, removing stopwords and punctuation, and stemming.
   2. preprocess_df()                                                -- Preprocesses the DataFrame by encoding the target column, removing duplicates, and transforming the text column.
@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=SMt3T-K2b_4&list=PLupK5DK91flV45dkPXyGViMLtHadRr
     2025-02-16 21:20:04,403 - data_preprocessing - DEBUG - Processed data saved to ./data\interim
 
 
-3. feature_engineering.py
+C. feature_engineering.py
 
   1. Load parameters from a YAML file.
   2. Load data from a CSV file.
@@ -67,7 +67,7 @@ https://www.youtube.com/watch?v=SMt3T-K2b_4&list=PLupK5DK91flV45dkPXyGViMLtHadRr
     2025-02-16 21:33:07,312 - feature_engineering - DEBUG - Data saved to ./data\processed\test_tfidf.csv    
 
 
-4. model_building.py
+D. model_building.py
 
   1. Load parameters from a YAML file.
   2. Load data from a CSV file.
@@ -84,7 +84,7 @@ https://www.youtube.com/watch?v=SMt3T-K2b_4&list=PLupK5DK91flV45dkPXyGViMLtHadRr
     2025-02-16 21:40:01,868 - model_building - DEBUG - Model saved to models/model.pkl  
 
 
-5. model_evaluation.py
+E. model_evaluation.py
 
    1. Load parameters from a YAML file.
    2. Load the trained model from a file.
@@ -105,5 +105,9 @@ https://www.youtube.com/watch?v=SMt3T-K2b_4&list=PLupK5DK91flV45dkPXyGViMLtHadRr
    WARNING: The following untracked files were present in the workspace before saving but will not be included in the experiment commit:
            params.yaml, projectflow.txt, data/interim/test_processed.csv, data/interim/train_processed.csv, data/processed/test_tfidf.csv, data/processed/train_tfidf.csv, data/raw/test.csv, data/raw/train.csv, experiments/mynotebook.ipynb, experiments/spam.csv, models/model.pkl, src/data_ingestion.py, src/feature_engineering.py, src/model_building.py, src/model_evaluation.py, src/preprocessing.py
    2025-02-16 21:46:28,268 - model_evaluation - DEBUG - Metrics saved to reports/metrics.json
+
+> git add .
+> git commit -m "MLOps pipeline ready with all components" 
+> git push origin main
 
 
