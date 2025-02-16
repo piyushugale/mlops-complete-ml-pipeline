@@ -235,3 +235,10 @@ dvc repro  -- runs the pipeline with given params
     +------------------+
 
 
+Change the values in params.yml - 1  > dvc repro
+Change the values in params.yml - 2  > dvc repro
+Change the values in params.yml - 3  > dvc repro
+Change the values in params.yml - 4  > dvc repro
+Change the values in params.yml - 5  > dvc repro  
+
+
