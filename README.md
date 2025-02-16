@@ -270,4 +270,14 @@ Change the values in params.yml - 5  > dvc repro
     Applying changes  ...  
 
 
+Change params
+
+![image](https://github.com/user-attachments/assets/01e1d81e-ed77-42a8-8883-afe66c3783e1)
+
+Run Experiment in DVC extension
+
+![image](https://github.com/user-attachments/assets/fc74342d-fac1-4c57-bb72-b72f86a5345f)
+
+
+
 
