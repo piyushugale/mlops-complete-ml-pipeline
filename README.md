@@ -202,3 +202,36 @@ dvc repro  -- runs the pipeline with given params
     Use `dvc push` to send your updates to remote storage.  
 
 
+# View Dependency Graph with > dvc dag
+
+    > dvc dag
+    WARNING: Unable to find `less` in the PATH. Check out <https://man.dvc.org/pipeline/show> for more info.
+    +----------------+     
+    | data_ingestion |     
+    +----------------+     
+                *
+                *
+                *
+    +--------------------+   
+    | data_preprocessing |   
+    +--------------------+   
+                *
+                *
+                *
+    +---------------------+
+    | feature_engineering |
+    +---------------------+
+                *
+                *
+                *
+    +----------------+
+    | model_building |
+    +----------------+
+                *
+                *
+                *
+    +------------------+
+    | model_evaluation |
+    +------------------+
+
+
