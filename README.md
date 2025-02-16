@@ -111,7 +111,7 @@ git add .
 git commit -m "MLOps pipeline ready with all components"   
 git push origin main  
 
-# Control pipeline stages with YAML file  
+# Control pipeline stages with DVC.YAML file  
 add dvc.yml -- all stagess of pipeline with command, dependency, params, output   
 dvc init   
 
@@ -201,4 +201,4 @@ dvc repro  -- runs the pipeline with given params
             dvc config core.autostage true
     Use `dvc push` to send your updates to remote storage.  
 
-    
+
