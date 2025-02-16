@@ -237,9 +237,37 @@ dvc repro  -- runs the pipeline with given params
 
 ![image](https://github.com/user-attachments/assets/8beacd78-4a0e-4c87-90ba-193b9b02ae4a)  
 
+# Using dvclive
+  
+pip install dvclive 
+  
+Change the values in params.yml - 1  > dvc repro  
+Change the values in params.yml - 2  > dvc repro  
+Change the values in params.yml - 3  > dvc repro  
+Change the values in params.yml - 4  > dvc repro  
+Change the values in params.yml - 5  > dvc repro  
 
-Change the values in params.yml - 1  > dvc repro
-Change the values in params.yml - 2  > dvc repro
-Change the values in params.yml - 3  > dvc repro
-Change the values in params.yml - 4  > dvc repro
-Change the values in params.yml - 5  > dvc repro
+  > dvc exp run -- creates random named experiment
+
+    Reproducing experiment 'stray-vlei'
+    Buildingworkspaceindex |17.0 [00:00, 1.07kentry/s] 
+    Comparingindexes       |15.0 [00:00, 1.31kentry/s] 
+    Applyingchanges        |0.00 [00:00,     ?file/s] 
+    Stage 'data_ingestion' didn't change, skipping
+    Stage 'data_preprocessing' didn't change, skipping
+    Stage 'feature_engineering' didn't change, skipping
+    Stage 'model_building' didn't change, skipping
+    Stage 'model_evaluation' didn't change, skipping
+
+    Ran experiment(s): stray-vlei
+    Experiment results have been applied to your workspace.
+
+  > dvc exp run
+
+    Reproducing experiment 'weeny-seam'
+    Buildingworkspaceindex |17.0 [00:00,  997entry/s]
+    Comparingindexes       |15.0 [00:00, 15.0kentry/s]
+    Applying changes  ...  
+
+
+
