@@ -106,8 +106,8 @@ E] model_evaluation.py
            params.yaml, projectflow.txt, data/interim/test_processed.csv, data/interim/train_processed.csv, data/processed/test_tfidf.csv, data/processed/train_tfidf.csv, data/raw/test.csv, data/raw/train.csv, experiments/mynotebook.ipynb, experiments/spam.csv, models/model.pkl, src/data_ingestion.py, src/feature_engineering.py, src/model_building.py, src/model_evaluation.py, src/preprocessing.py
    2025-02-16 21:46:28,268 - model_evaluation - DEBUG - Metrics saved to reports/metrics.json
 
-git add .
-git commit -m "MLOps pipeline ready with all components" 
-git push origin main
+git add .  
+git commit -m "MLOps pipeline ready with all components"   
+git push origin main  
 
 
