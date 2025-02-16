@@ -235,3 +235,7 @@ dvc repro  -- runs the pipeline with given params
     +------------------+
 
 
+![image](https://github.com/user-attachments/assets/8beacd78-4a0e-4c87-90ba-193b9b02ae4a)  
+
+
+
